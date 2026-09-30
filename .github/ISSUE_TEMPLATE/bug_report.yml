@@ -1,0 +1,43 @@
+name: Bug report
+description: The script does not work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste** cookies, `Authorization` headers, copied network requests, or private messages.
+        Replace names and message content with `REDACTED` in any HTML you share.
+  - type: input
+    id: script-version
+    attributes:
+      label: Script version
+      description: Shown in Tampermonkey, for example `1.0.0`.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and Tampermonkey version
+      placeholder: Chrome 140, Tampermonkey 5.4
+    validations:
+      required: true
+  - type: input
+    id: snapchat-version
+    attributes:
+      label: Snapchat Web version
+      description: Printed in the browser console when Snapchat Web loads, for example `Snapchat v13.79.0`.
+  - type: input
+    id: panel-status
+    attributes:
+      label: Panel message
+      description: The exact text shown at the bottom of the panel.
+      placeholder: "Stopped: 5 failures in a row. …"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What happened
+      description: What you clicked, what you expected, and what happened instead.
+    validations:
+      required: true
