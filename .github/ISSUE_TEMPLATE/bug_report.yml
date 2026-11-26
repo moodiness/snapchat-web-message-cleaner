@@ -6,12 +6,12 @@ body:
     attributes:
       value: |
         **Never paste** cookies, `Authorization` headers, copied network requests, or private messages.
-        Replace names and message content with `REDACTED` in any HTML you share.
+        Replace names and message content with `REDACTED` in any HTML or Activity log lines you share.
   - type: input
     id: script-version
     attributes:
       label: Script version
-      description: Shown in Tampermonkey, for example `1.0.0`.
+      description: Shown in Tampermonkey and in the panel settings, for example `2.0.0`.
     validations:
       required: true
   - type: input
@@ -30,7 +30,7 @@ body:
     id: panel-status
     attributes:
       label: Panel message
-      description: The exact text shown at the bottom of the panel.
+      description: The exact text shown in the panel (result or pause message), in English or French.
       placeholder: "Stopped: 5 failures in a row. …"
     validations:
       required: true
